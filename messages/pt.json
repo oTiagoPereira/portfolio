@@ -1,0 +1,136 @@
+{
+  "Metadata": {
+    "title": "Tiago Pereira | Desenvolvedor Full Stack",
+    "description": "Portfólio de Tiago Pereira — Desenvolvedor Full Stack especializado em React, Next.js e TypeScript focado em soluções escaláveis."
+  },
+  "Hero": {
+    "viewProjects": "Ver Projetos",
+    "downloadCV": "Baixar CV",
+    "linkedin": "LinkedIn",
+    "contact": "Entrar em Contato",
+    "description": "Estagiário de Desenvolvimento Full Stack com foco em criar aplicações modernas e eficientes. Minha trajetória começou no suporte de TI, o que me deu uma visão única sobre infraestrutura e as necessidades reais dos usuários.",
+    "roles": [
+      "Desenvolvedor Full Stack"
+    ]
+  },
+  "Nav": {
+    "inicio": "Início",
+    "stack": "Stack",
+    "projetos": "Projetos",
+    "experiencia": "Experiência",
+    "contato": "Contato"
+  },
+  "Experience": {
+    "title": "Minha Trajetória",
+    "subtitle": "Experiência Profissional",
+    "description": "Minha jornada na tecnologia, desde o suporte técnico até o desenvolvimento full stack.",
+    "items": [
+      {
+        "role": "Estagiário de Desenvolvimento Full Stack",
+        "company": "AGSINN Tecnologia",
+        "period": "Outubro 2025 — Presente",
+        "description": "Desenvolvimento e manutenção de aplicações web full stack. Atuação direta com APIs REST, modelagem de dados com Sequelize/Prisma e implementação de testes unitários para garantir a qualidade do software."
+      },
+      {
+        "role": "Estagiário de Suporte de TI",
+        "company": "Toyolex Toyota (Grupo Parvi)",
+        "period": "Abril 2025 — Outubro 2025",
+        "description": "Responsável pelo suporte técnico de primeiro e segundo nível, troubleshooting de hardware e software, e auxílio na manutenção da infraestrutura de rede da concessionária."
+      }
+    ]
+  },
+  "Projects": {
+    "title": "Trabalhos em destaque",
+    "subtitle": "Projetos",
+    "description": "Uma seleção de aplicações e experimentos técnicos onde priorizo a escalabilidade, performance e a entrega de valor real aos usuários.",
+    "code": "Código",
+    "live": "Live Demo",
+    "featured": "Destaque",
+    "all": "Todos",
+    "items": [
+      {
+        "title": "Meu Portfólio",
+        "description": "Meu projeto principal atualmente. Construído com Next.js 15, TypeScript e Tailwind CSS, focado em alta performance e animações fluidas."
+      },
+      {
+        "title": "Hotel Regency",
+        "description": "Aplicação fullstack em construção para gestão hoteleira. O frontend utiliza React, TypeScript e Framer Motion. Inclui dashboards administrativos e de usuário, focado em reserva de quartos por temporada e padrões de projeto escaláveis. Backend em Node.js com PostgreSQL."
+      },
+      {
+        "title": "CineList",
+        "description": "Plataforma para exploração de filmes com recomendações por IA. Possui autenticação completa (Email e Google), gerenciamento de favoritos e listas personalizadas. Integrado à API TMDB para detalhes técnicos, trailers e onde assistir. Backend em Node.js e banco via Prisma."
+      }
+    ],
+    "ongoing": {
+      "title": "Em Breve",
+      "items": [
+        {
+          "title": "Sistema de Gerenciamento",
+          "description": "Plataforma focada em autenticação, gerenciamento de estado e banco de dados avançado."
+        }
+      ]
+    }
+  },
+  "Stack": {
+    "title": "Tecnologias & Ferramentas",
+    "subtitle": "Stack",
+    "description": "Tecnologias que uso no dia a dia para construir produtos digitais de alta performance.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "ferramentas": "Ferramentas",
+      "design": "Design"
+    }
+  },
+  "Learning": {
+    "title": "Próximos Passos",
+    "subtitle": "Aprendendo",
+    "description": "Tecnologias e conceitos que estou explorando atualmente para expandir meu conhecimento.",
+    "complete": "completo",
+    "items": [
+      {
+        "title": "Arquitetura de Software",
+        "description": "Aprofundando em Clean Architecture, SOLID e separação de responsabilidades com Node.js."
+      },
+      {
+        "title": "Design Patterns",
+        "description": "Aplicando padrões de projeto em TypeScript para criar sistemas escaláveis e fáceis de testar."
+      },
+      {
+        "title": "Banco de Dados",
+        "description": "Indo além do CRUD: otimização de queries, índices, transações e modelagem avançada."
+      },
+      {
+        "title": "TypeScript & Lógica",
+        "description": "Elevando o nível técnico com tipagem avançada, Generics, Type Guards e princípios de lógica."
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Vamos Conversar",
+    "subtitle": "Contato",
+    "description": "Tem um projeto em mente ou quer apenas dizer oi? Sinta-se à vontade para entrar em contato.",
+    "form": {
+      "name": "Seu nome",
+      "email": "Seu email",
+      "message": "Sua mensagem",
+      "send": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar mensagem. Tente novamente."
+    }
+  },
+  "Footer": {
+    "backToTop": "Voltar ao topo"
+  },
+  "TerminalLoader": {
+    "welcome": "Bem vindo ao meu portfolio",
+    "dev": "Dev Fullstack",
+    "boot": [
+      "Initializing kernel...",
+      "Mounting virtual filesystems... [OK]",
+      "Starting Dev Fullstack services... [OK]",
+      "System ready."
+    ]
+  }
+}
