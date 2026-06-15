@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { GitHubIcon } from "@/components/icons";
@@ -52,7 +53,7 @@ export function Projects() {
         <div className="mb-12 flex flex-wrap items-center justify-center gap-3">
           <Badge
             variant={activeTag === null ? "default" : "outline"}
-            className="cursor-pointer px-5 py-2 text-sm transition-all hover:scale-105 active:scale-95"
+            className="h-auto cursor-pointer px-5 py-2 text-sm sm:text-base transition-all hover:scale-105 active:scale-95"
             onClick={() => setActiveTag(null)}
           >
             Todos
@@ -61,7 +62,7 @@ export function Projects() {
             <Badge
               key={tag}
               variant={activeTag === tag ? "default" : "outline"}
-              className="cursor-pointer px-5 py-2 text-sm transition-all hover:scale-105 active:scale-95"
+              className="h-auto cursor-pointer px-5 py-2 text-sm sm:text-base transition-all hover:scale-105 active:scale-95"
               onClick={() => setActiveTag(tag)}
             >
               {tag}
@@ -79,6 +80,17 @@ export function Projects() {
               animate={isInView ? "visible" : "hidden"}
             >
               <Card className={cardClasses}>
+                {project.image && (
+                  <div className="relative aspect-video w-full overflow-hidden border-b border-border/40">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                )}
                 <CardHeader className="pb-4">
                   <div className="flex items-start justify-between gap-3">
                     <h3 className={titleClasses}>

@@ -117,7 +117,12 @@
       "send": "Send Message",
       "sending": "Sending...",
       "success": "Message sent successfully!",
-      "error": "Error sending message. Please try again."
+      "error": "Error sending message. Please try again.",
+      "validation": {
+        "name": "Name must be at least 2 characters",
+        "email": "Invalid email",
+        "message": "Message must be at least 10 characters"
+      }
     }
   },
   "Footer": {

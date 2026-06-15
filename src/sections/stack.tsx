@@ -41,7 +41,7 @@ export function Stack() {
   const { ref, isInView, staggerVariants } = useScrollAnimation();
   const categories = Object.keys(categoryConfig) as Skill["category"][];
 
-  const categoryLabelClasses = "text-sm font-semibold uppercase tracking-wider text-muted-foreground/70";
+  const categoryLabelClasses = "text-sm sm:text-base font-semibold uppercase tracking-wider text-muted-foreground/70";
   const categoryContainerClasses = "space-y-12";
 
   return (
@@ -69,7 +69,7 @@ export function Stack() {
                 className="space-y-6"
               >
                 <div className="flex items-center gap-3">
-                  <div className={cn("flex size-9 items-center justify-center rounded-md border border-border/50 bg-background/50 backdrop-blur-sm", config.color.split(" ")[2])}>
+                  <div className={cn("flex size-9 sm:size-10 items-center justify-center rounded-md border border-border/50 bg-background/50 backdrop-blur-sm", config.color.split(" ")[2])}>
                     {config.icon}
                   </div>
                   <span className={categoryLabelClasses}>
@@ -81,7 +81,7 @@ export function Stack() {
                     <Badge
                       key={skill.name}
                       variant="outline"
-                      className="px-4 py-2 text-[0.8125rem] font-medium transition-all hover:border-primary/50 hover:bg-primary/5 hover:text-primary cursor-default"
+                      className="h-auto px-4 py-2 text-sm sm:text-base font-medium transition-all hover:border-primary/50 hover:bg-primary/5 hover:text-primary cursor-default"
                     >
                       {skill.name}
                     </Badge>

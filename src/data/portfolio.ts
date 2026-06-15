@@ -39,7 +39,7 @@ export const personalInfo = {
   githubFilter: {
     include: ['portfolio', 'hotel-regency', 'cinelist-frontend', 'cinelist', 'spotify-replica'],
   },
-  resumeUrl: '/resume.pdf',
+  resumeUrl: '/curriculo_tiago.pdf',
 };
 
 export const skills: Skill[] = [
@@ -81,6 +81,7 @@ export const projects: Project[] = [
     github: "https://github.com/oTiagoPereira/portfolio",
     live: "https://otiagopereira.dev",
     featured: true,
+    image: '/projects/portfolio.png'
   },
   {
     title: "Hotel Regency",
@@ -90,6 +91,7 @@ export const projects: Project[] = [
     github: "https://github.com/oTiagoPereira/hotel-regency",
     live: "https://regencyheights.vercel.app/",
     featured: true,
+    image: '/projects/regency-hotel.png'
   },
   {
     title: "CineList",
@@ -99,6 +101,7 @@ export const projects: Project[] = [
     github: "https://github.com/oTiagoPereira/cinelist",
     live: "https://cinelist.otiagopereira.dev",
     featured: true,
+    image: '/projects/cinelist.png'
   },
 ];
 
@@ -108,7 +111,7 @@ export const ongoingProjects: Project[] = [
     description:
       "Projeto que estou desenvolvendo para consolidar conhecimentos em autenticação, banco de dados e gerenciamento de estado.",
     tags: ["Next.js", "Prisma", "Zod", "PostgreSQL"],
-    
+
   },
 ];
 

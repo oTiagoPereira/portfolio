@@ -12,14 +12,12 @@ export function Experience() {
   const { ref, isInView, staggerVariants } = useScrollAnimation();
 
   const containerClasses = "relative mx-auto max-w-3xl";
-  const timelineLineClasses = "absolute left-[1.1875rem] top-0 h-full w-px bg-gradient-to-b from-primary/50 via-border to-border/10";
+  const timelineLineClasses = "absolute left-5 top-0 h-full w-px bg-gradient-to-b from-primary/50 via-border to-border/10";
   const itemClasses = "relative pl-14";
-  const dotClasses = "absolute left-2.5 top-1.5 size-[0.9375rem] rounded-full border-2 border-primary bg-background shadow-[0_0_10px_rgba(255,86,0,0.2)]";
+  const dotClasses = "absolute left-5 top-0 size-[0.9375rem] -translate-x-1/2 rounded-full border-2 border-primary bg-background shadow-[0_0_10px_rgba(255,86,0,0.2)]";
   const periodClasses = "text-xs font-bold uppercase tracking-widest text-primary/80";
   const roleClasses = "text-xl font-bold tracking-tight text-foreground";
 
-  // Use keys from data to get translated content
-  // Since we have the same order in JSON and portfolio.ts, we can map over portfolio.ts
   const items = t.raw('items') as Array<{
     role: string;
     company: string;

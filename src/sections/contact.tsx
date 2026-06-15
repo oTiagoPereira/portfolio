@@ -28,6 +28,20 @@ export function Contact() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    // Validação mínima no cliente para evitar 400 do backend
+    if (form.name.trim().length < 2) {
+      toast.error(t('form.validation.name'));
+      return;
+    }
+    if (!/\S+@\S+\.\S+/.test(form.email)) {
+      toast.error(t('form.validation.email'));
+      return;
+    }
+    if (form.message.trim().length < 10) {
+      toast.error(t('form.validation.message'));
+      return;
+    }
+
     setIsPending(true);
 
     try {
@@ -37,11 +51,18 @@ export function Contact() {
         body: JSON.stringify(form),
       });
 
-      if (!response.ok) throw new Error();
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        const msg = data?.error || t('form.error');
+        const details = data?.details ? JSON.stringify(data.details) : null;
+        toast.error(details ? `${msg}: ${details}` : msg);
+        return;
+      }
 
       toast.success(t('form.success'));
       setForm({ name: "", email: "", message: "" });
-    } catch {
+    } catch (err) {
       toast.error(t('form.error'));
     } finally {
       setIsPending(false);

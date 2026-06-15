@@ -20,6 +20,7 @@ export async function POST(request: Request) {
     const parsed = contactSchema.safeParse(body);
 
     if (!parsed.success) {
+      console.error("Contact validation failed:", parsed.error.flatten(), "body:", body);
       return NextResponse.json(
         { error: "Dados inválidos", details: parsed.error.flatten() },
         { status: 400 }
@@ -45,7 +46,7 @@ export async function POST(request: Request) {
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; background-color: #f9f9f9; padding: 20px; border: 1px solid #eeeeee; border-radius: 8px;">
           <h2 style="color: #333333; border-bottom: 2px solid #ff5600; padding-bottom: 10px;">Nova mensagem do Portfólio</h2>
-          
+
           <div style="margin-top: 20px;">
             <p style="margin: 5px 0;"><strong>Nome:</strong> ${name}</p>
             <p style="margin: 5px 0;"><strong>E-mail:</strong> <a href="mailto:${email}" style="color: #ff5600; text-decoration: none;">${email}</a></p>
